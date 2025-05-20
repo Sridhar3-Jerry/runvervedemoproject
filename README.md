@@ -1,4 +1,4 @@
-Runverve User Metrics API
+**Runverve User Metrics API**:
 🔹 Project Overview
 This backend project manages health and fitness metrics using sample data imported from Strava. It provides a secure REST API for storing, retrieving, updating, and deleting user metrics such as hydration, fatigue, posture, heart rate, steps, calories burned, sleep data, and more.
 
@@ -46,17 +46,8 @@ Testing: Postman Collection
 
 
 📁 Project Structure
-src/
- └── main/
-      ├── java/
-      │    └── com.runverve.runvervedemoproject
-      │         ├── controller
-      │         ├── model
-      │         ├── repository
-      │         ├── service
-      │         └── config
-      └── resources/
-            └── application.properties
+![image](https://github.com/user-attachments/assets/2bcf23bf-4140-4ae7-bc07-14d64576bb88)
+
 
 
 
