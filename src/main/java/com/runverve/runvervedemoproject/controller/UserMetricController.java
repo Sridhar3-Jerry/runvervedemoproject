@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -76,6 +77,7 @@ public class UserMetricController {
 
 
 
+
     // Add new metric
     @PostMapping("/addmetric")
     public ResponseEntity<UserMetrics> addMetric(@RequestBody UserMetrics userMetrics, Authentication auth) {
@@ -96,7 +98,7 @@ public class UserMetricController {
 
 
 
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
         public ResponseEntity<UserMetrics> updateMetric(@PathVariable long id,
                                                         @RequestBody UserMetrics metric,
                                                         Authentication auth) {
@@ -121,7 +123,7 @@ public class UserMetricController {
 
 
     // Delete metric
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/remove/{id}")
     public ResponseEntity<Void> deleteMetric(@PathVariable long id, Authentication auth) {
         UserMetrics existingMetric = userMetricService.getUserMetricById(id);
         if (existingMetric == null) return ResponseEntity.notFound().build();
