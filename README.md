@@ -51,24 +51,8 @@ Testing: Postman Collection
 
 
 
-🔐 Authentication Flow
-Users register or login to receive a JWT token.
+![image](https://github.com/user-attachments/assets/eae71c78-01bc-4953-9394-527d9a3404aa)
 
-The JWT token must be sent in the Authorization header for all secured API requests:
-Authorization: Bearer <JWT_TOKEN>
-
-
-
-🔗 API Endpoints
-Method	Endpoint	Access	Description
-POST	/api/auth/register	Public	Register a new user
-POST	/api/auth/login	Public	Login and receive JWT token
-POST	/api/metrics/addmetric	User/Admin	Add a new user metric
-GET	/api/metrics/{userId}	User/Admin	Retrieve metrics by user ID
-GET	/api/metrics/by-user-and-date	User/Admin	Retrieve metrics filtered by user ID and date
-PUT	/api/metrics/update/{id}	User/Admin	Update a metric by its ID
-DELETE	/api/metrics/remove/{id}	User/Admin	Delete a metric by its ID
-GET	/api/metrics	Admin Only	Retrieve all users’ metrics
 
 
 
